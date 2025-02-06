@@ -129,7 +129,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
 
           /// content
           Positioned.fill(
-            left: leftSpace * 2,
+            left: leftSpace * 1.5,
             right: size.width * 0.03,
             child: Column(
               mainAxisSize: MainAxisSize.min,
