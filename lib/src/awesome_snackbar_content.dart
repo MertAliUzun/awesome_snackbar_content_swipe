@@ -54,7 +54,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
     final hslDark = hsl.withLightness((hsl.lightness - 0.1).clamp(0.0, 1.0));
 
     double horizontalPadding = 0.0;
-    double leftSpace = size.width * 0.12;
+    double leftSpace = size.width * 0.16;
 
     if (isMobile) {
       horizontalPadding = size.width * 0.01;
@@ -186,13 +186,13 @@ class AwesomeSnackbarContent extends StatelessWidget {
   String assetSVG(ContentType contentType) {
     if (contentType == ContentType.failure) {
       /// failure will show `CROSS`
-      return AssetsPath.failure;
+      return AssetsPath.warning;
     } else if (contentType == ContentType.success) {
       /// success will show `CHECK`
       return AssetsPath.success;
     } else if (contentType == ContentType.warning) {
       /// warning will show `EXCLAMATION`
-      return AssetsPath.warning;
+      return AssetsPath.failure;
     } else if (contentType == ContentType.help) {
       /// help will show `QUESTION MARK`
       return AssetsPath.help;
