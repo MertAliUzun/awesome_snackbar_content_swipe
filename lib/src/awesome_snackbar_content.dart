@@ -128,53 +128,56 @@ class AwesomeSnackbarContent extends StatelessWidget {
           ),
 
           /// content
-          Positioned.fill(
-            left: leftSpace,
-            right: size.width * 0.03,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                SizedBox(
-                  height: size.height * 0.015,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    /// `title` parameter
-                    Expanded(
-                      flex: 3,
-                      child: Text(
-                        title,
-                        style: TextStyle(
-                          fontSize: !isMobile
-                              ? size.height * 0.03
-                              : size.height * 0.025,
-                          fontWeight: FontWeight.w600,
-                          color: Colors.white,
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: size.width * 0.1),
+            child: Positioned.fill(
+              left: leftSpace,
+              right: size.width * 0.03,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(
+                    height: size.height * 0.015,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      /// `title` parameter
+                      Expanded(
+                        flex: 3,
+                        child: Text(
+                          title,
+                          style: TextStyle(
+                            fontSize: !isMobile
+                                ? size.height * 0.03
+                                : size.height * 0.025,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: size.height * 0.005,
-                ),
-
-                /// `message` body text parameter
-                Expanded(
-                  child: Text(
-                    message,
-                    style: TextStyle(
-                      fontSize: size.height * 0.016,
-                      color: Colors.white,
+                    ],
+                  ),
+                  SizedBox(
+                    height: size.height * 0.005,
+                  ),
+            
+                  /// `message` body text parameter
+                  Expanded(
+                    child: Text(
+                      message,
+                      style: TextStyle(
+                        fontSize: size.height * 0.016,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
-                ),
-                SizedBox(
-                  height: size.height * 0.015,
-                ),
-              ],
+                  SizedBox(
+                    height: size.height * 0.015,
+                  ),
+                ],
+              ),
             ),
           )
         ],
