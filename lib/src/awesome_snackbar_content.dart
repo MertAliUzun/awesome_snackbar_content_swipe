@@ -105,7 +105,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
           Positioned(
             top: -size.height * 0.02,
             left: leftSpace -
-                (isMobile ? size.width * 0.05 : size.width * 0.025),
+                (isMobile ? size.width * 0.12 : size.width * 0.05),
             child: Stack(
               alignment: Alignment.center,
               children: [
@@ -143,8 +143,8 @@ class AwesomeSnackbarContent extends StatelessWidget {
 
           /// content
           Positioned.fill(
-            left: leftSpace * 1.4,
-            right: leftSpace * .5,
+            left: leftSpace * 1.2,
+            right: leftSpace,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
