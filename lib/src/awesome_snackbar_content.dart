@@ -105,7 +105,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
           Positioned(
             top: -size.height * 0.02,
             left: leftSpace -
-                (isMobile ? size.width * 0.075 : size.width * 0.035),
+                (isMobile ? size.width * 0.05 : size.width * 0.025),
             child: Stack(
               alignment: Alignment.center,
               children: [
@@ -131,15 +131,12 @@ class AwesomeSnackbarContent extends StatelessWidget {
             top: 0,
             bottom: 0,
             right: leftSpace *.25,
-            child: Container(
-              color: Colors.black.withOpacity(0.1),
-              child: ClipRRect(
-                child: SvgPicture.asset(
-                  AssetsPath.swipe,
-                  height: size.height * 0.05,
-                  width: size.width * 0.04,
-                  package: 'awesome_snackbar_content',
-                ),
+            child: ClipRRect(
+              child: SvgPicture.asset(
+                AssetsPath.swipe,
+                height: size.height * 0.05,
+                width: size.width * 0.04,
+                package: 'awesome_snackbar_content',
               ),
             ),
           ),
