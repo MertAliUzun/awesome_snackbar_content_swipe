@@ -7,4 +7,5 @@ class AssetsPath {
 
   static const String back = 'assets/back.svg';
   static const String bubbles = 'assets/bubbles.svg';
+  static const String swipe = 'assets/swipe.svg';
 }

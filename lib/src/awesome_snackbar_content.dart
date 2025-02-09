@@ -127,6 +127,19 @@ class AwesomeSnackbarContent extends StatelessWidget {
             ),
           ),
 
+          Positioned(
+            bottom: 0,
+            right: leftSpace,
+            child: ClipRRect(
+              child: SvgPicture.asset(
+                AssetsPath.swipe,
+                height: size.height * 0.06,
+                width: size.width * 0.05,
+                package: 'awesome_snackbar_content',
+              ),
+            ),
+          ),
+
           /// content
           Positioned.fill(
             left: leftSpace * 1.5,
