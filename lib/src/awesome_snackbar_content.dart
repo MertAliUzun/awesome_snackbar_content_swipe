@@ -128,8 +128,9 @@ class AwesomeSnackbarContent extends StatelessWidget {
           ),
 
           Positioned(
+            top: 0,
             bottom: 0,
-            right: leftSpace,
+            right: leftSpace *.3,
             child: ClipRRect(
               child: SvgPicture.asset(
                 AssetsPath.swipe,
@@ -142,8 +143,8 @@ class AwesomeSnackbarContent extends StatelessWidget {
 
           /// content
           Positioned.fill(
-            left: leftSpace * 1.5,
-            right: size.width * 0.03,
+            left: leftSpace * 1.3,
+            right: leftSpace * 1.3,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
