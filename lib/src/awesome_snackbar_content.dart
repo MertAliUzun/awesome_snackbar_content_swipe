@@ -132,7 +132,9 @@ class AwesomeSnackbarContent extends StatelessWidget {
             bottom: 0,
             right: leftSpace *.25,
             child: Container(
-              color: Colors.black.withOpacity(0.3),
+              color: Colors.black.withOpacity(0.6),
+              height: size.height * 0.06, 
+              width: size.width * 0.05,
               child: ClipRRect(
                 child: SvgPicture.asset(
                   AssetsPath.swipe,
