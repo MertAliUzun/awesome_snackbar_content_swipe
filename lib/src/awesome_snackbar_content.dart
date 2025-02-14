@@ -184,7 +184,6 @@ class AwesomeSnackbarContent extends StatelessWidget {
                       color: Colors.white,
                       overflow: TextOverflow.ellipsis,
                     ),
-                    textAlign: TextAlign.justify,
                     maxLines: 3,
                   ),
                 ),
