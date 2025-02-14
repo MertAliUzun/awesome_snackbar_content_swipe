@@ -185,6 +185,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                     ),
                     textAlign: TextAlign.justify,
+                    maxLines: 3,
                   ),
                 ),
                 SizedBox(
