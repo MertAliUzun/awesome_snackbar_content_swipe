@@ -172,7 +172,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: size.height * 0.002,
+                  height: size.height * 0.008,
                 ),
 
                 /// `message` body text parameter
@@ -180,10 +180,11 @@ class AwesomeSnackbarContent extends StatelessWidget {
                   child: Text(
                     message,
                     style: TextStyle(
-                      fontSize: size.height * 0.012,
+                      fontSize: size.height * 0.015,
                       color: Colors.white,
                       overflow: TextOverflow.ellipsis,
                     ),
+                    textAlign: TextAlign.justify,
                   ),
                 ),
                 SizedBox(
