@@ -130,7 +130,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
           Positioned(
             top: 0,
             bottom: 0,
-            right: leftSpace *.25,
+            right: leftSpace *.2,
             child: ClipRRect(
               child: SvgPicture.asset(
                 AssetsPath.swipe,
@@ -150,7 +150,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: size.height * 0.015,
+                  height: size.height * 0.005,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -172,7 +172,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: size.height * 0.005,
+                  height: size.height * 0.002,
                 ),
 
                 /// `message` body text parameter
@@ -180,8 +180,9 @@ class AwesomeSnackbarContent extends StatelessWidget {
                   child: Text(
                     message,
                     style: TextStyle(
-                      fontSize: size.height * 0.016,
+                      fontSize: size.height * 0.012,
                       color: Colors.white,
+                      overflow: TextOverflow.ellipsis,
                     ),
                   ),
                 ),
