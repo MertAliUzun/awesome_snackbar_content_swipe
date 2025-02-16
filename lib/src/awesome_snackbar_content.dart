@@ -130,12 +130,12 @@ class AwesomeSnackbarContent extends StatelessWidget {
           Positioned(
             top: 0,
             bottom: 0,
-            right: leftSpace *.2,
+            right: leftSpace *.15,
             child: ClipRRect(
               child: SvgPicture.asset(
                 AssetsPath.swipe,
-                height: size.height * 0.05,
-                width: size.width * 0.04,
+                height: size.height * 0.045,
+                width: size.width * 0.035,
                 package: 'awesome_snackbar_content',
               ),
             ),
@@ -172,7 +172,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: size.height * 0.008,
+                  height: size.height * 0.007,
                 ),
 
                 /// `message` body text parameter
@@ -180,7 +180,7 @@ class AwesomeSnackbarContent extends StatelessWidget {
                   child: Text(
                     message,
                     style: TextStyle(
-                      fontSize: size.height * 0.015,
+                      fontSize: size.height * 0.014,
                       color: Colors.white,
                       overflow: TextOverflow.ellipsis,
                     ),
